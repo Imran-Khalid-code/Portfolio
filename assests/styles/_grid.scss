@@ -1,28 +1,139 @@
+@import './base';
+
 .projects {
-	padding: 60px 45px;
 	background-color: $color-secondary;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	z-index: 1000;
+	border-radius: 7px;
+	background-color: white;
+	padding: 50px;
+
+	@media screen and (max-width: 500px) {
+		width: 100%;
+		height: 70vh;
+	}
+
+	h4 {
+		font-size: 2rem;
+	}
+
+	.modal-img {
+		width: 50%;
+		margin: 20px auto;
+
+		@media screen and (max-width: 500px) {
+			width: 80%;
+		}
+	}
+
+	.modal-description {
+		margin-bottom: 20px;
+	}
+
+	.modal-btn-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		.modal-btn {
+			// background-color: rgb(75, 38, 38);
+			border-radius: 7px;
+			width: 140px;
+			height: 50px;
+			border: none;
+			// color: white;
+			font-size: 14px;
+			font-weight: bold;
+			// display: inline-block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 5px;
+		}
+		.preview-btn {
+			background-color: blue;
+			color: white;
+		}
+		.code-btn {
+			background-color: #e5e5e5;
+			color: black;
+		}
+	}
+}
+.modal.active {
+	display: block;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 900;
+}
+
+.overlay.active {
+	display: block;
 }
 
 .projects-inner {
 	max-width: 1200px;
+	width: 70%;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 45px;
 	grid-row-gap: 45px;
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media screen and (max-width: 500px) {
+		grid-template-columns: 1fr;
+	}
 }
 
-.project-item h4 {
-	color: $color-black;
-	font-size: 1.5rem;
-	font-weight: normal;
-	margin: 0;
-}
+.project-item {
+	width: 300px;
+	border: 3px solid black;
 
-.project-item p {
-	color: $color-black;
-	margin: 0;
-	line-height: 1.6;
+	@media screen and (max-width: 1200px) {
+		width: 250px;
+	}
+	h4 {
+		color: $color-black;
+		font-size: 1.5rem;
+		font-weight: normal;
+		margin-top: 20px;
+	}
+
+	p {
+		color: $color-black;
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	img {
+		width: 100%;
+		height: 200px;
+	}
+
+	.project-btn {
+		background-color: black;
+		margin: 20px 0;
+		padding: 12px 20px;
+		border: none;
+		color: white;
+		border-radius: 5px;
+		font-weight: bold;
+	}
 }
 
 .about {
@@ -51,4 +162,29 @@
 	color: $color-black;
 	margin: 0;
 	line-height: 1.6;
+	font-size: 30px;
+}
+
+.details {
+	background-color: rgb(75, 38, 38);
+	border-radius: 7px;
+	width: 140px;
+	height: 50px;
+	border: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+
+	// display: flex;
+	// flex-direction: row;
+	// justify-content: space-between;
+}
+
+.script {
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	background-color: $color-secondary;
 }
