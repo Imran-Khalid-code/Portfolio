@@ -9,6 +9,10 @@ div {
 		font-family: $font-body, sans-serif;
 		background-color: $color-secondary;
 
+		@media screen and (max-width: 1440px) {
+			font-size: 100px;
+		}
+
 		@media screen and (max-width: 500px) {
 			font-size: 48px;
 		}

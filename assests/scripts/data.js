@@ -22,7 +22,7 @@ export const projects = [
 		skills: ['Vanilla JS', 'CSS'],
 	},
 	{
-		name: 'Tic Tac Toe Vanilla JS',
+		name: 'Tic Tac Toe',
 		description:
 			'Using Vanilla JS to build this and SASS to style it, this project took 7 days to make',
 		link: 'https://github.com/Imran-Khalid-code/nology-coursework-new/tree/main/03-JavaScript-fundamentals/Tic-Tac-Toe-Project',

@@ -40,6 +40,9 @@ projects.map((project) => {
 	const modal = document.createElement('div')
 	modal.classList.add('modal')
 
+	const modalContainer = document.createElement('div')
+	modalContainer.classList.add('modal-container')
+
 	//Modal Header
 	const modalHeader = document.createElement('h4')
 	modalHeader.innerText = project.name
@@ -84,13 +87,14 @@ projects.map((project) => {
 	})
 
 	//Append all elements to modal container
-	modal.appendChild(modalButton)
+	modal.appendChild(modalContainer)
 	btnContainer.appendChild(previewLink)
 	btnContainer.appendChild(codeLink)
-	modal.appendChild(modalHeader)
-	modal.appendChild(modalImg)
-	modal.appendChild(modalDescription)
-	modal.appendChild(btnContainer)
+	modalContainer.appendChild(modalButton)
+	modalContainer.appendChild(modalHeader)
+	modalContainer.appendChild(modalImg)
+	modalContainer.appendChild(modalDescription)
+	modalContainer.appendChild(btnContainer)
 
 	// append modal to the main
 	main.appendChild(modal)
