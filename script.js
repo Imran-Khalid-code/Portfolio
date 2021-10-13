@@ -57,9 +57,9 @@ projects.map((project) => {
 
 	//Modal button
 
-	// const modalButton = document.createElement('button')
-	// modalButton.classList.add('modal-btn')
-	// modalButton.innerHTML = 'Close'
+	const modalButton = document.createElement('button')
+	modalButton.classList.add('close-btn')
+	modalButton.innerText = 'X'
 
 	const btnContainer = document.createElement('div')
 	btnContainer.classList.add('modal-btn-container')
@@ -76,21 +76,21 @@ projects.map((project) => {
 	codeLink.classList.add('code-btn')
 	codeLink.href = project.link
 	console.log(codeLink)
-	//Close Modal on click
+	// //Close Modal on click
 
-	// modalButton.addEventListener('click', () => {
-	// 	modal.classList.remove('active')
-	// 	overlay.classList.remove('active')
-	// })
+	modalButton.addEventListener('click', () => {
+		modal.classList.remove('active')
+		overlay.classList.remove('active')
+	})
 
 	//Append all elements to modal container
+	modal.appendChild(modalButton)
 	btnContainer.appendChild(previewLink)
 	btnContainer.appendChild(codeLink)
 	modal.appendChild(modalHeader)
 	modal.appendChild(modalImg)
 	modal.appendChild(modalDescription)
 	modal.appendChild(btnContainer)
-	// modal.appendChild(modalButton)
 
 	// append modal to the main
 	main.appendChild(modal)

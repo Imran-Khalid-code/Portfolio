@@ -141,7 +141,7 @@ h5 {
   background-color: #f0a500;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   div h3 {
     font-size: 35px;
   }
@@ -416,6 +416,7 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 5px;
+  font-size: 19px;
 }
 
 .modal .modal-btn-container .preview-btn {
@@ -450,8 +451,8 @@ a:visited {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 45px;
   grid-row-gap: 45px;
 }
@@ -507,6 +508,7 @@ a:visited {
   color: white;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 19px;
 }
 
 .about {
@@ -540,29 +542,18 @@ a:visited {
   font-size: 30px;
 }
 
-.details {
-  background-color: #4b2626;
-  border-radius: 7px;
-  width: 140px;
-  height: 50px;
+.close-btn {
+  color: black;
+  font-size: 25px;
   border: none;
-  color: white;
-  font-size: 20px;
+  background-color: white;
+  margin-left: 800px;
   font-weight: bold;
 }
 
-.script {
-  padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: #f0a500;
+@media screen and (max-width: 550px) {
+  .close-btn {
+    font-size: 5px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -15,7 +15,8 @@ export const projects = [
 		description:
 			'Using Vanilla JS to build this and CSS to style it, this project took 7 days to make',
 		link: 'https://github.com/Imran-Khalid-code/nology-coursework-new/tree/main/03-JavaScript-fundamentals/Functioning-Calculator-Project',
-		preview: '',
+		preview:
+			'file:///Users/imrankhalid/Documents/nology-coursework/03-JavaScript-fundamentals/Functioning-Calculator-Project/index.html',
 		imgsrc:
 			'https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1325&q=80',
 		skills: ['Vanilla JS', 'CSS'],
@@ -25,7 +26,7 @@ export const projects = [
 		description:
 			'Using Vanilla JS to build this and SASS to style it, this project took 7 days to make',
 		link: 'https://github.com/Imran-Khalid-code/nology-coursework-new/tree/main/03-JavaScript-fundamentals/Tic-Tac-Toe-Project',
-		preview: '',
+		preview: 'http://127.0.0.1:5503/index.html',
 		imgsrc:
 			'https://images.unsplash.com/photo-1600224374823-211f85c16521?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1722&q=80',
 		skills: ['Vanilla JS', 'SCSS'],
@@ -35,7 +36,7 @@ export const projects = [
 		description:
 			'Using Vanilla JS to build this and CSS to style it, this project took 7 days to make',
 		link: 'https://github.com/Imran-Khalid-code/nology-coursework-new/tree/main/04-Advanced-JS-testing/pacMan-Game',
-		preview: '',
+		preview: 'http://127.0.0.1:5502/index.html',
 		imgsrc:
 			'https://images.unsplash.com/photo-1579309401389-a2476dddf3d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80',
 		skills: ['Vanilla JS', 'CSS'],
